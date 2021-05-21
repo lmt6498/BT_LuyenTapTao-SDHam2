@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    function numMin(a, b, c) {
+        var min = a;
+        if (min > b) {
+            min = b;
+        }
+        if (min > c) {
+            min = c;
+        }
+        return min;
+    }
+
+    var nhapSo1 = parseInt(prompt("Nhập số thứ nhất"));
+    var nhapSo2 = parseInt(prompt("Nhập số thứ hai"));
+    var nhapSo3 = parseInt(prompt("Nhập số thứ ba"));
+    var min = numMin(nhapSo1, nhapSo2, nhapSo3);
+    alert("Số nhỏ nhất là: " + min);
+</script>
+</body>
+</html>

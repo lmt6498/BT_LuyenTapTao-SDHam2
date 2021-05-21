@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<script>
+    function timKiem(arr,n){
+        var index=0;
+        var count =0;
+        for (var i=0;i<arr.length;i++){
+            if (n == arr[i]){
+                index = i;
+                count++;
+            }
+        }
+        return count;
+    }
+    var arr1 = [1,2,6,4,5,2,4,1,5,9,8,2];
+    var a = prompt("Nhập số cần tìm: ");
+    if (timKiem(arr1,a)==0){
+        alert(-1);
+    }else {
+        alert("Số "+a +" có "+timKiem(arr1,a)+" phần tử trong mảng!")
+    }
+    alert(timKiem(arr1,a));
+</script>
+</body>
+</html>

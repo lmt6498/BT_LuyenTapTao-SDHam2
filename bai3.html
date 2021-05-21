@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <label>Tính giai thừa</label><br>
+    <input id="input" type="number" placeholder="Type Number"
+           oninput="giaiThua(this.value)"
+           onchange="giaiThua(this.value)">
+</p>
+<p>Kết quả: <span id="output"></span></p>
+</body>
+</html>
+<script>
+    function giaiThua(num) {
+        num = parseFloat(num);
+        var gt = 1;
+        for (var i = 1; i <= num; i++) {
+            gt *= i;
+            document.getElementById("output").innerHTML = gt;
+        }
+    }
+
+</script>

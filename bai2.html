@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<p>
+    <label>Tính diện tích hình tròn</label><br>
+    <input id="input1" type="number" placeholder="Nhập bán kính"
+           onInput="dienTich(this.value)"
+           onChange="dienTich(this.value)">
+</p>
+<p>Kết quả: <span id="output1"></span></p>
+<p>
+    <label>Tính Chu vi hình tròn</label><br>
+    <input id="input2" type="number" placeholder="Nhập bán kính"
+           onInput="chuVi(this.value)"
+           onChange="chuVi(this.value)">
+</p>
+<p>Kết quả: <span id="output2"></span></p>
+</body>
+</html>
+<script>
+    const pi = 3.14;
+
+    function dienTich(r) {
+        r = parseFloat(r);
+        document.getElementById("output1").innerHTML = r * r * pi;
+    }
+
+    function chuVi(r) {
+        r = parseFloat(r);
+        document.getElementById("output2").innerHTML = r * 2 * pi;
+    }
+</script>

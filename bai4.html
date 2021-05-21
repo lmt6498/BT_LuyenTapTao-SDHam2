@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check If Number</title>
+</head>
+<body>
+<label>Input Here</label><input type="text" id="Input">
+<button type="button" onclick="CheckInputIsNumber()">CHECK</button>
+<script>
+    function CheckInputIsNumber(val) {
+        val = document.getElementById("Input").value;
+        if (isNaN(val)) {
+            alert("false")
+            return false
+        }
+        alert(true)
+    }
+</script>
+</body>
+</html>

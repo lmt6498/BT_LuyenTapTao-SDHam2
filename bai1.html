@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <label>Tính Bình Phương</label><br>
+    <input id="input" type="number" placeholder="Type Number"
+           oninput="binhPhuong(this.value)"
+           onchange="binhPhuong(this.value)">
+</p>
+<p>Kết quả: <span id="output"></span></p>
+</body>
+</html>
+<script>
+    function binhPhuong(num) {
+        num = parseInt(num);
+        document.getElementById("output").innerHTML = num * num;
+    }
+</script>

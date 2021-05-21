@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<label>Nhập vào 1 số: </label><input type="number" id="input">
+<button type="button" onclick="checkNum()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function checkNum() {
+        var num = document.getElementById("input").value;
+        if (num > 0) {
+            alert(true);
+        } else if (num < 0) {
+            alert(false)
+        } else {
+            alert("Vừa là số âm vừa là dương :))!")
+        }
+    }
+</script>

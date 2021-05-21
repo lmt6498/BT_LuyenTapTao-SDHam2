@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<input type="text" id="Num1" placeholder="Number A">
+<input type="text" id="Num2" placeholder="Number B">
+<button type="button" onclick="Swapper()"> >Swap< </button>
+<p id="GoOut"></p>
+<script>
+  function Swapper() {
+    let a = parseInt(document.getElementById("Num1").value);
+    let b = parseInt(document.getElementById("Num2").value);
+    let temp = a;
+    a = b;
+    b = temp;
+    document.getElementById("GoOut").innerHTML = "A is " + a + " B is " + b}
+</script>
+</body>
+</html>
